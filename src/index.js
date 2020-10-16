@@ -22,6 +22,7 @@ const switchTemps = (res) => {
 const displayResults = (weather) => {
   domElements.showCity(weather);
   domElements.showTempC(weather);
+  domElements.showDescription(weather);
   switchTemps(weather);
 };
 

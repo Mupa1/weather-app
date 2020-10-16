@@ -58,7 +58,7 @@ header input:focus {
   font-weight: 500;
 }
 
-.weather {
+.description {
   font-size: 32px;
   font-weight: 700;
   font-style: italic;
