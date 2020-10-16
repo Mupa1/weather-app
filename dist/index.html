@@ -18,11 +18,15 @@
       </section>
       <div class="current">
         <div class="temp">11<span>°C</span></div>
-        <div class="temp tempF">52<span>°F</span></div>
         <div class="weather">Partly Cloudy</div>
-        <div class="toggle m-auto">
-          <button class="m-0 px-2 border-right">°C</button>
-          <button class="m-0 px-2">°F</button>
+        
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light active celcius">
+            <input type="checkbox" name="options" autocomplete="off" checked> °C
+          </label>
+          <label class="btn btn-light active fahrenheit">
+            <input type="checkbox" name="options" autocomplete="off" checked> °F
+          </label>
         </div>
       </div>
     </main>

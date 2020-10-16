@@ -13,8 +13,12 @@ body {
   background-position: top center;
 }
 
-button {
+.btn {
   width: 50px;
+}
+
+.btn:hover {
+  background-color: #fff !important;
 }
 
 .container-fluid {
@@ -33,35 +37,31 @@ header input:focus {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.location .city {
+.city {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 4px;
 }
 
-.location .date {
+.date {
   font-size: 16px;
 }
 
-.current .temp {
+.temp {
   font-size: 60px;
   font-weight: 900;
   margin: 20px 0;
   text-shadow: 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.current .temp span {
+.temp span {
   font-weight: 500;
 }
 
-.current .weather {
+.weather {
   font-size: 32px;
   font-weight: 700;
   font-style: italic;
   margin-bottom: 10px;
   text-shadow: 0 3px rgba(0, 0, 0, 0.4);
-}
-
-.tempF {
-  display: none;
 }
