@@ -35,6 +35,7 @@ const fetchResults = (city) => {
 const setQuery = (e) => {
   if (e.keyCode === 13) {
     fetchResults(searchbox.value);
+    searchbox.value = '';
   }
 };
 
