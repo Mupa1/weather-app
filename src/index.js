@@ -1,12 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import searchbox from './dom';
+import {
+  searchbox,
+  domElements,
+} from './dom';
 
 const key = 'e0fbc2a16f333c42771b462f6a2ea420';
 const baseUrl = 'https://api.openweathermap.org/data/2.5/';
 
 const displayResults = (weather) => {
-  console.log(`${weather.name}, ${Math.round(weather.main.temp)}`);
+  domElements.showCity(weather);
 };
 
 const fetchResults = (city) => {
