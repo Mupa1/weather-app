@@ -10,6 +10,7 @@ const baseUrl = 'https://api.openweathermap.org/data/2.5/';
 
 const displayResults = (weather) => {
   domElements.showCity(weather);
+  domElements.showTempC(weather);
 };
 
 const fetchResults = (city) => {
