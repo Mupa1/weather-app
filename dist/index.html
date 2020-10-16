@@ -4,8 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <div class="container-fluid p-0 m-0">
+    <header class="text-center p-5">
+      <input type="text" class="search-box w-100 p-2" placeholder="Search for a city..." />
+    </header>
+    <main class="text-center text-white">
+      <section class="location">
+        <div class="city">London, UK</div>
+        <div class="date">Friday 16 October 2020</div>
+      </section>
+      <div class="current">
+        <div class="temp">11<span>°C</span></div>
+        <div class="temp tempF">52<span>°F</span></div>
+        <div class="weather">Partly Cloudy</div>
+        <div class="toggle m-auto">
+          <button class="m-0 px-2 border-right">°C</button>
+          <button class="m-0 px-2">°F</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
