@@ -3,6 +3,7 @@ const city = document.querySelector('.city');
 const temp = document.querySelector('.temp');
 const btns = document.querySelector('.btn-group');
 const description = document.querySelector('.description');
+const date = document.querySelector('.date');
 
 const domElements = (() => {
   const showCity = (res) => {
@@ -21,11 +22,16 @@ const domElements = (() => {
     description.innerText = `${res.weather[0].description}`;
   };
 
+  const showDate = (res) => {
+    date.innerText = `${res}`;
+  };
+
   return {
     showCity,
     showTempC,
     showTempF,
     showDescription,
+    showDate,
   };
 })();
 

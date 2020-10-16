@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { fromUnixTime, format } from 'date-fns';
 import './styles.css';
 import {
   searchbox,
@@ -19,10 +20,16 @@ const switchTemps = (res) => {
   });
 };
 
+const displayDate = (res) => {
+  const dateResult = format(fromUnixTime(res.dt), 'EEEE d MMMM yyyy');
+  domElements.showDate(dateResult);
+};
+
 const displayResults = (weather) => {
   domElements.showCity(weather);
   domElements.showTempC(weather);
   domElements.showDescription(weather);
+  displayDate(weather);
   switchTemps(weather);
 };
 
