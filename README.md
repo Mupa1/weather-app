@@ -22,7 +22,7 @@ To get a copy up and running follow these simple example steps:-
 
 To make changes open weather-app directory in you favorite editor.
 - Navigate to src folder to make any changes.
-- To preview changes live, use npm run dev from your terminal then run index.hmtl in the browser.
+- To preview changes live, run npm start from your terminal then run index.hmtl in the browser.
 - When you finish your changes, run npm run build to create the production files to the dist folder.
 
 ## Automated Test
