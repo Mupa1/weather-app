@@ -4,6 +4,7 @@ const temp = document.querySelector('.temp');
 const btns = document.querySelector('.btn-group');
 const description = document.querySelector('.description');
 const date = document.querySelector('.date');
+const error = document.querySelector('.error');
 
 const domElements = (() => {
   const showCity = (res) => {
@@ -26,12 +27,17 @@ const domElements = (() => {
     date.innerText = `${res}`;
   };
 
+  const showError = (err) => {
+    error.textContent = `${err}`;
+  };
+
   return {
     showCity,
     showTempC,
     showTempF,
     showDescription,
     showDate,
+    showError,
   };
 })();
 

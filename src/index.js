@@ -36,7 +36,9 @@ const displayResults = (weather) => {
 const fetchResults = (city) => {
   fetch(`${baseUrl}weather?q=${city}&units=metric&APPID=${key}`)
     .then(weather => weather.json())
-    .then(displayResults);
+    .then(displayResults)
+    .catch(() => domElements.showError('Something wrong happened. Please enter valid city and try again.'))
+    .then(domElements.showError(''));
 };
 
 const setQuery = (e) => {
