@@ -1,6 +1,6 @@
 # Weather-App
 
-A weather app that displays a city's real-time weather by searching by city name. The app is built using Javascript and HTML/CSS.
+A weather app that fetches data from the OpenWeatherMap API allowing users to search for and view the forecast in cities worldwide. Built with JavaScript.
 
 ![screenshot](src/images/screenshot.png)
 
@@ -9,20 +9,20 @@ A weather app that displays a city's real-time weather by searching by city name
 - JavaScript
 - Webpack
 - HTML/CSS
-- Openweathermap api
+- OpenWeatherMap API
 
 [Live Link](https://raw.githack.com/Mupa1/weather-app/weather_app/dist/index.html)
 
 ## Getting Started
-To get a copy up and running follow these simple example steps:-
-- Clone `https://github.com/Mupa1/weather-app.git` to your local machine.
-- Run `npm install` to install dependancies.
+To get a copy up and running, follow these simple example steps:-
+- Clone https://github.com/Mupa1/weather-app.git to your local machine.
+- Run npm install to install dependencies.
 - cd into the weather-app directory and navigate into the dist directory.
 - Run index.html in a browser.
 
-To make changes open weather-app directory in you favorite editor.
-- Navigate to src folder to make any changes.
-- To preview changes live, run npm start from your terminal then run index.hmtl in the browser.
+To make changes open the weather-app directory in your favorite editor.
+- Navigate to the src folder to make any changes.
+- To preview changes live, run npm start from your terminal, then run index.html in the browser.
 - When you finish your changes, run npm run build to create the production files to the dist folder.
 
 ## Automated Test
